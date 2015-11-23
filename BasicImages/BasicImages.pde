@@ -20,8 +20,13 @@ void setup() {
 
 void draw(){
   background(0);
+  
+  
+  
+  //Adds penguin and its home
   image(home,width/2, height/2,800,800);
   image( penguin, width/2, height/2, penguin.width * scaleFactor, penguin.height * scaleFactor);
+  
   
   //Makes code look like alien in Mars
   filter(INVERT);
@@ -32,7 +37,7 @@ void keyPressed(){
     exit();
   }
   
-  //Makes picture gets larger and smaller
+  //Makes picture gets larger and smaller accroding to up and down arrows
   if ( keyCode == UP ){
     scaleFactor+= .01;
   }

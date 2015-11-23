@@ -22,6 +22,9 @@ void draw(){
   background(0);
   image(home,width/2, height/2,800,800);
   image( penguin, width/2, height/2, penguin.width * scaleFactor, penguin.height * scaleFactor);
+  
+  //Makes code look like alien in Mars
+  filter(INVERT);
 }
 
 void keyPressed(){

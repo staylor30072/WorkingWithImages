@@ -20,7 +20,7 @@ void setup() {
   lady = loadImage("lady.png");
   heart = loadImage("heart.png");
   bow = loadImage("bow.png");
-  love = loadImage("plove.png");
+  love = loadImage("love.png");
 
   //Sets location of large penguin
   x=0;
@@ -45,11 +45,12 @@ void draw() {
 
 
   //Makes code look kinda drawn-y
-  //filter(POSTERIZE, 15);
+  filter(POSTERIZE, 15);
 
   //Makes heart pop up when they meet
   if (dist(x, height/2, xs, height/2)<300) {
     image( heart, 500, 200, 100, 100);
+    text("We Found Love in a Hopeless Place", width/2,height-height/6);
   }
 }
 

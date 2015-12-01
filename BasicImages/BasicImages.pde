@@ -41,6 +41,7 @@ void draw() {
   //Female penguin
   image( penguin, xs, height/2, 250, 300);
   image( bow, xs, 250, 40, 40);
+  //Makes home look low class and dungy
   home.mask(weatherg);
 
 
